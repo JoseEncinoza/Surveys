@@ -1,0 +1,52 @@
+.wrapper {
+  padding: 0 50px 60px 50px;
+  z-index: 9;
+  position: absolute;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  height: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subheader {
+  text-align: center;
+  margin: 0 -65px 45px -65px;
+  height: 300px;
+  border-bottom: 1px solid #e8ebed;
+}
+
+.subheader-quote {
+  background: #fff4e3 url(../../../../assets/img/quote_bg.png) no-repeat center bottom;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (max-width: 768px) {
+  .subheader {
+    margin-bottom:5px;
+  }
+
+  .wrapper {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subheader {
+    margin: 0 -65px 5px -65px;
+  }
+}

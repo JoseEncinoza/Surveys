@@ -1,0 +1,12 @@
+git:
+  depth: 3
+branches:
+  except:
+  - docs
+language: node_js
+node_js:
+  - "node"
+  - "8"
+script:
+  - npm run lint
+  - npm run build

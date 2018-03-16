@@ -1,0 +1,146 @@
+.wizard {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.top {
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8ebed;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.progressbar {
+  height: 2em;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  background: #ffcc7b;
+  color: #222222;
+}
+
+.progressbar-value {
+  margin: -1px;
+  height: 100%;
+  background: #f5ab35;
+}
+
+.middle {
+  padding: 15px 0;
+}
+
+.backward,
+.forward,
+.submit {
+    border: none;
+    color: #fff;
+    padding: 7px 20px;
+    text-decoration: none;
+    transition: background .5s ease;
+    -moz-transition: background .5s ease;
+    -webkit-transition: background .5s ease;
+    -o-transition: background .5s ease;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 400;
+    outline: none;
+    text-align: center;
+    background: #409fff;
+    position: relative;
+    font-size: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 10px 30px 10px 30px;
+}
+.backward {
+    color: #333;
+    background: #e8e8e8;
+    padding: 10px 20px 10px 30px;
+    margin-right: 4px;
+}
+.forward,
+.submit {
+    padding: 10px 30px 10px 20px;
+}
+[disabled] {
+    display: none;
+}
+.backward:before {
+    content: "\34";
+    font-family: 'ElegantIcons';
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 18px;
+}
+.forward:before {
+    content: "\35";
+    font-family: 'ElegantIcons';
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 18px;
+}
+.submit:before {
+    content: "\4e";
+    font-family: 'ElegantIcons';
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 18px;
+}
+.submit.circle:before {
+    content: "\e800";
+    font-family: 'fontello';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+	-moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+.backward:hover,
+.forward:hover {
+    background: #0073e5;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+  .progressbar {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .wizard {
+    float: left;
+    width: 66.66666667%;
+  }
+
+  .container {
+    border-left: 2px solid #e8ebed;
+  }
+
+  .middle {
+    padding: 30px 0 30px 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wizard {
+    width: 75%;
+  }
+}

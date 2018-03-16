@@ -1,0 +1,98 @@
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    color: #555;
+
+}
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+b, strong {
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-font-smoothing: antialiased;
+    color: #222;
+    font-weight: 700;
+    font-family: inherit;
+    line-height: 1.1;
+}
+p {
+  margin: 0 0 10px;
+}
+hr {
+    margin: 15px 0 30px 0;
+	border-color: #ededed;
+}
+a {
+    color: #409fff;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    outline: none;
+}
+a:hover,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+footer{
+	background-color:#fff;
+	border-top: 1px solid #e8ebed;
+	padding:25px;
+}
+footer ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+footer ul li a {
+    color: #555;
+}
+footer ul li:after {
+    content: "|";
+    font-weight: 300;
+    position: relative;
+    left: 10px;
+}
+footer ul li:first-child:after,
+footer ul li:last-child:after {
+    content: ""
+}
+footer ul li:first-child {
+    margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+  footer ul {text-align:center;}
+	footer ul li {display:block;margin-right: 0;}
+	footer ul li:after {content: "";left:0;}
+	footer ul li:first-child {margin-right: 0;}
+}
+
+// ELEGANT FONT
+@font-face {
+  font-family: 'ElegantIcons';
+  src: url('../../assets/fonts/ElegantIcons.eot');
+  src: url('../../assets/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/ElegantIcons.woff') format('woff'), url('../../assets/fonts/ElegantIcons.ttf') format('truetype'), url('../../assets/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
